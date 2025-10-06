@@ -1,1471 +1,1931 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghana's Fine Accessories | Premium Men's & Women's Accessories</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="./styles.css">
-    
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Ghana's Fine Accessories | Premium Men's & Women's Accessories
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <div class="container header-container">
-            <a href="#" class="logo" onclick="showPage('home')">FINE<span>OUTLET</span></a>
+      <div class="container header-container">
+        <a href="#" class="logo" onclick="showPage('home')"
+          >FINE<span>OUTLET</span></a
+        >
 
-            <nav>
-                <ul>
-                    <li><a href="#" onclick="showPage('home')" class="active">Home</a></li>
-                    <li><a href="#" onclick="showPage('men')">Men</a></li>
-                    <li><a href="#" onclick="showPage('women')">Women</a></li>
-                    <li><a href="#" onclick="showPage('collection')">Collection</a></li>
-                    <li><a href="#" onclick="showPage('cart')">Cart</a></li>
-                    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
-                    <li>
-                        <a href="#" onclick="showPage('login')" id="auth-link">Login</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" onclick="showPage('home')" class="active">Home</a>
+            </li>
+            <li><a href="#" onclick="showPage('men')">Men</a></li>
+            <li><a href="#" onclick="showPage('women')">Women</a></li>
+            <li><a href="#" onclick="showPage('collection')">Collection</a></li>
+            <li><a href="#" onclick="showPage('cart')">Cart</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            <li>
+              <a href="#" onclick="showPage('login')" id="auth-link">Login</a>
+            </li>
+          </ul>
+        </nav>
 
-            <div class="header-icons">
-                <div class="search-icon">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="user-icon" onclick="showPage('user-dashboard')" id="user-icon" style="display: none">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="cart-icon" onclick="showPage('cart')">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-count" id="cart-count">0</span>
-                </div>
-            </div>
+        <div class="header-icons">
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div
+            class="user-icon"
+            onclick="showPage('user-dashboard')"
+            id="user-icon"
+            style="display: none"
+          >
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="cart-icon" onclick="showPage('cart')">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/233551234567?text=Hello%20FINE%20OUTLET%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+    <a
+      href="https://wa.me/233551234567?text=Hello%20FINE%20OUTLET%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Home Page -->
     <div id="home" class="page active">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container hero-content">
-                <h1>Elevate Your Style with Premium Accessories</h1>
-                <p>
-                    Discover our curated collection of men's and women's accessories
-                    that combine quality, style, and affordability.
-                </p>
-                <a href="#" class="btn" onclick="showPage('collection')">Shop Now</a>
-            </div>
-        </section>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>Elevate Your Style with Premium Accessories</h1>
+          <p>
+            Discover our curated collection of men's and women's accessories
+            that combine quality, style, and affordability.
+          </p>
+          <a href="#" class="btn" onclick="showPage('collection')">Shop Now</a>
+        </div>
+      </section>
 
-        <!-- Categories Section -->
-        <section class="categories">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Shop By Category</h2>
-                </div>
-                
-                <div class="category-container">
-                    <div class="category">
-                        <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Men's Accessories">
-                        <div class="category-overlay">
-                            <h3>Men's Collection</h3>
-                            <a href="#" class="btn btn-outline" onclick="showPage('men')">Explore</a>
-                        </div>
-                    </div>
-                    
-                    <div class="category">
-                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Women's Accessories">
-                        <div class="category-overlay">
-                            <h3>Women's Collection</h3>
-                            <a href="#" class="btn btn-outline" onclick="showPage('women')">Explore</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Categories Section -->
+      <section class="categories">
+        <div class="container">
+          <div class="section-title">
+            <h2>Shop By Category</h2>
+          </div>
 
-        <!-- Featured Products -->
-        <section class="featured-products">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Featured Products</h2>
-                </div>
-                
-                <div class="products-container">
-                    <div class="product" data-category="men watches">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Leather Watch">
-                        </div>
-                        <div class="product-info">
-                            <h3>Classic Leather Watch</h3>
-                            <p>Elegant timepiece with genuine leather strap</p>
-                            <div class="product-price">
-                                <span class="price">₵1,499.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Classic Leather Watch', 1499.99, 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product" data-category="women jewelry">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1606760227093-89928c8d5e9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Sunglasses">
-                        </div>
-                        <div class="product-info">
-                            <h3>Designer Sunglasses</h3>
-                            <p>UV protected lenses with polarized coating</p>
-                            <div class="product-price">
-                                <span class="price">₵899.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Designer Sunglasses', 899.99, 'https://images.unsplash.com/photo-1606760227093-89928c8d5e9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product" data-category="women handbags">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Handbag">
-                        </div>
-                        <div class="product-info">
-                            <h3>Designer Handbag</h3>
-                            <p>Luxurious handcrafted leather handbag</p>
-                            <div class="product-price">
-                                <span class="price">₵2,199.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Designer Handbag', 2199.99, 'https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product" data-category="women jewelry">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Silver Necklace">
-                        </div>
-                        <div class="product-info">
-                            <h3>Silver Pendant Necklace</h3>
-                            <p>Elegant sterling silver necklace with diamond accent</p>
-                            <div class="product-price">
-                                <span class="price">₵1,699.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Silver Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="category-container">
+            <div class="category">
+              <img
+                src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Men's Accessories"
+              />
+              <div class="category-overlay">
+                <h3>Men's Collection</h3>
+                <a href="#" class="btn btn-outline" onclick="showPage('men')"
+                  >Explore</a
+                >
+              </div>
             </div>
-        </section>
 
-        <!-- Newsletter -->
-        <section class="newsletter">
-            <div class="container">
-                <h2>Subscribe to Our Newsletter</h2>
-                <p>
-                    Stay updated with our latest collections, exclusive offers, and
-                    fashion tips.
-                </p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
+            <div class="category">
+              <img
+                src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Women's Accessories"
+              />
+              <div class="category-overlay">
+                <h3>Women's Collection</h3>
+                <a href="#" class="btn btn-outline" onclick="showPage('women')"
+                  >Explore</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section class="featured-products">
+        <div class="container">
+          <div class="section-title">
+            <h2>Featured Products</h2>
+          </div>
+
+          <div class="products-container">
+            <div class="product" data-category="men watches">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Leather Watch"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Classic Leather Watch</h3>
+                <p>Elegant timepiece with genuine leather strap</p>
+                <div class="product-price">
+                  <span class="price">₵1,499.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Classic Leather Watch', 1499.99, 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women jewelry">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1606760227093-89928c8d5e9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Sunglasses"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Designer Sunglasses</h3>
+                <p>UV protected lenses with polarized coating</p>
+                <div class="product-price">
+                  <span class="price">₵899.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Designer Sunglasses', 899.99, 'https://images.unsplash.com/photo-1606760227093-89928c8d5e9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women handbags">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Handbag"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Designer Handbag</h3>
+                <p>Luxurious handcrafted leather handbag</p>
+                <div class="product-price">
+                  <span class="price">₵2,199.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Designer Handbag', 2199.99, 'https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women jewelry">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Silver Necklace"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Silver Pendant Necklace</h3>
+                <p>Elegant sterling silver necklace with diamond accent</p>
+                <div class="product-price">
+                  <span class="price">₵1,699.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Silver Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter">
+        <div class="container">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>
+            Stay updated with our latest collections, exclusive offers, and
+            fashion tips.
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
     </div>
 
     <!-- Men's Page -->
     <div id="men" class="page">
-        <div class="page-header">
-            <div class="container">
-                <h1>Men's Accessories</h1>
-                <div class="breadcrumb">
-                    <a href="#" onclick="showPage('home')">Home</a>
-                    <span>/</span>
-                    <a href="#">Men</a>
-                </div>
-            </div>
-        </div>
-
+      <div class="page-header">
         <div class="container">
-            <div class="filters">
-                <span class="filter-title">Filter By Category:</span>
-                <div class="filter-options">
-                    <div>
-                        <input type="checkbox" id="men-watches" value="men watches" onchange="filterProducts('men')">
-                        <label for="men-watches">Watches</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="men-belts" value="men belts" onchange="filterProducts('men')">
-                        <label for="men-belts">Belts</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="men-wallets" value="men wallets" onchange="filterProducts('men')">
-                        <label for="men-wallets">Wallets</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="men-sunglasses" value="men sunglasses" onchange="filterProducts('men')">
-                        <label for="men-sunglasses">Sunglasses</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products-grid" id="men-products">
-                <div class="product" data-category="men watches">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Men's Watch">
-                    </div>
-                    <div class="product-info">
-                        <h3>Chronograph Watch</h3>
-                        <p>Luxury men's watch with chronograph function</p>
-                        <div class="product-price">
-                            <span class="price">₵1,799.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Chronograph Watch', 1799.99, 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men belts">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Leather Belt">
-                    </div>
-                    <div class="product-info">
-                        <h3>Genuine Leather Belt</h3>
-                        <p>Classic men's belt made from genuine leather</p>
-                        <div class="product-price">
-                            <span class="price">₵499.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Genuine Leather Belt', 499.99, 'https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men wallets">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Men's Wallet">
-                    </div>
-                    <div class="product-info">
-                        <h3>Leather Bifold Wallet</h3>
-                        <p>Premium leather wallet with multiple card slots</p>
-                        <div class="product-price">
-                            <span class="price">₵599.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Leather Bifold Wallet', 599.99, 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men sunglasses">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Aviator Sunglasses">
-                    </div>
-                    <div class="product-info">
-                        <h3>Aviator Sunglasses</h3>
-                        <p>Classic aviator style with UV protection</p>
-                        <div class="product-price">
-                            <span class="price">₵899.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Aviator Sunglasses', 899.99, 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men accessories">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Tie Set">
-                    </div>
-                    <div class="product-info">
-                        <h3>Silk Tie Collection</h3>
-                        <p>Set of three premium silk ties</p>
-                        <div class="product-price">
-                            <span class="price">₵899.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Silk Tie Collection', 899.99, 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men belts">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Leather Belt">
-                    </div>
-                    <div class="product-info">
-                        <h3>Genuine Leather Belt</h3>
-                        <p>Classic men's belt made from genuine leather</p>
-                        <div class="product-price">
-                            <span class="price">₵499.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Genuine Leather Belt', 499.99, 'https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men wallets">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Men's Wallet">
-                    </div>
-                    <div class="product-info">
-                        <h3>Leather Bifold Wallet</h3>
-                        <p>Premium leather wallet with multiple card slots</p>
-                        <div class="product-price">
-                            <span class="price">₵599.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Leather Bifold Wallet', 599.99, 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men sunglasses">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Aviator Sunglasses">
-                    </div>
-                    <div class="product-info">
-                        <h3>Aviator Sunglasses</h3>
-                        <p>Classic aviator style with UV protection</p>
-                        <div class="product-price">
-                            <span class="price">₵899.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Aviator Sunglasses', 899.99, 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men accessories">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Tie Set">
-                    </div>
-                    <div class="product-info">
-                        <h3>Silk Tie Collection</h3>
-                        <p>Set of three premium silk ties</p>
-                        <div class="product-price">
-                            <span class="price">₵899.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Silk Tie Collection', 899.99, 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men belts">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Leather Belt">
-                    </div>
-                    <div class="product-info">
-                        <h3>Genuine Leather Belt</h3>
-                        <p>Classic men's belt made from genuine leather</p>
-                        <div class="product-price">
-                            <span class="price">₵499.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Genuine Leather Belt', 499.99, 'https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men wallets">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Men's Wallet">
-                    </div>
-                    <div class="product-info">
-                        <h3>Leather Bifold Wallet</h3>
-                        <p>Premium leather wallet with multiple card slots</p>
-                        <div class="product-price">
-                            <span class="price">₵599.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Leather Bifold Wallet', 599.99, 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men sunglasses">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Aviator Sunglasses">
-                    </div>
-                    <div class="product-info">
-                        <h3>Aviator Sunglasses</h3>
-                        <p>Classic aviator style with UV protection</p>
-                        <div class="product-price">
-                            <span class="price">₵899.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Aviator Sunglasses', 899.99, 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men accessories">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Tie Set">
-                    </div>
-                    <div class="product-info">
-                        <h3>Silk Tie Collection</h3>
-                        <p>Set of three premium silk ties</p>
-                        <div class="product-price">
-                            <span class="price">₵899.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Silk Tie Collection', 899.99, 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="men accessories">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1589561253895-0c8f0c3f33f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Cufflinks">
-                    </div>
-                    <div class="product-info">
-                        <h3>Silver Cufflinks</h3>
-                        <p>Elegant silver cufflinks for formal attire</p>
-                        <div class="product-price">
-                            <span class="price">₵459.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Silver Cufflinks', 459.99, 'https://images.unsplash.com/photo-1589561253895-0c8f0c3f33f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <h1>Men's Accessories</h1>
+          <div class="breadcrumb">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <span>/</span>
+            <a href="#">Men</a>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="filters">
+          <span class="filter-title">Filter By Category:</span>
+          <div class="filter-options">
+            <div>
+              <input
+                type="checkbox"
+                id="men-watches"
+                value="men watches"
+                onchange="filterProducts('men')"
+              />
+              <label for="men-watches">Watches</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="men-belts"
+                value="men belts"
+                onchange="filterProducts('men')"
+              />
+              <label for="men-belts">Belts</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="men-wallets"
+                value="men wallets"
+                onchange="filterProducts('men')"
+              />
+              <label for="men-wallets">Wallets</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="men-sunglasses"
+                value="men sunglasses"
+                onchange="filterProducts('men')"
+              />
+              <label for="men-sunglasses">Sunglasses</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-grid" id="men-products">
+          <div class="product" data-category="men watches">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Men's Watch"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Chronograph Watch</h3>
+              <p>Luxury men's watch with chronograph function</p>
+              <div class="product-price">
+                <span class="price">₵1,799.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Chronograph Watch', 1799.99, 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men belts">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Leather Belt"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Genuine Leather Belt</h3>
+              <p>Classic men's belt made from genuine leather</p>
+              <div class="product-price">
+                <span class="price">₵499.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Genuine Leather Belt', 499.99, 'https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men wallets">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Men's Wallet"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Leather Bifold Wallet</h3>
+              <p>Premium leather wallet with multiple card slots</p>
+              <div class="product-price">
+                <span class="price">₵599.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Leather Bifold Wallet', 599.99, 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men sunglasses">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Aviator Sunglasses"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Aviator Sunglasses</h3>
+              <p>Classic aviator style with UV protection</p>
+              <div class="product-price">
+                <span class="price">₵899.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Aviator Sunglasses', 899.99, 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men accessories">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Tie Set"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Silk Tie Collection</h3>
+              <p>Set of three premium silk ties</p>
+              <div class="product-price">
+                <span class="price">₵899.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Silk Tie Collection', 899.99, 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men belts">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Leather Belt"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Genuine Leather Belt</h3>
+              <p>Classic men's belt made from genuine leather</p>
+              <div class="product-price">
+                <span class="price">₵499.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Genuine Leather Belt', 499.99, 'https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men wallets">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Men's Wallet"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Leather Bifold Wallet</h3>
+              <p>Premium leather wallet with multiple card slots</p>
+              <div class="product-price">
+                <span class="price">₵599.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Leather Bifold Wallet', 599.99, 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men sunglasses">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Aviator Sunglasses"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Aviator Sunglasses</h3>
+              <p>Classic aviator style with UV protection</p>
+              <div class="product-price">
+                <span class="price">₵899.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Aviator Sunglasses', 899.99, 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men accessories">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Tie Set"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Silk Tie Collection</h3>
+              <p>Set of three premium silk ties</p>
+              <div class="product-price">
+                <span class="price">₵899.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Silk Tie Collection', 899.99, 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men belts">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Leather Belt"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Genuine Leather Belt</h3>
+              <p>Classic men's belt made from genuine leather</p>
+              <div class="product-price">
+                <span class="price">₵499.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Genuine Leather Belt', 499.99, 'https://images.unsplash.com/photo-1622560480654-d96214fdc887?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men wallets">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Men's Wallet"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Leather Bifold Wallet</h3>
+              <p>Premium leather wallet with multiple card slots</p>
+              <div class="product-price">
+                <span class="price">₵599.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Leather Bifold Wallet', 599.99, 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men sunglasses">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Aviator Sunglasses"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Aviator Sunglasses</h3>
+              <p>Classic aviator style with UV protection</p>
+              <div class="product-price">
+                <span class="price">₵899.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Aviator Sunglasses', 899.99, 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men accessories">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Tie Set"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Silk Tie Collection</h3>
+              <p>Set of three premium silk ties</p>
+              <div class="product-price">
+                <span class="price">₵899.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Silk Tie Collection', 899.99, 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="men accessories">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1589561253895-0c8f0c3f33f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Cufflinks"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Silver Cufflinks</h3>
+              <p>Elegant silver cufflinks for formal attire</p>
+              <div class="product-price">
+                <span class="price">₵459.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Silver Cufflinks', 459.99, 'https://images.unsplash.com/photo-1589561253895-0c8f0c3f33f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Women's Page -->
     <div id="women" class="page">
-        <div class="page-header">
-            <div class="container">
-                <h1>Women's Accessories</h1>
-                <div class="breadcrumb">
-                    <a href="#" onclick="showPage('home')">Home</a>
-                    <span>/</span>
-                    <a href="#">Women</a>
-                </div>
-            </div>
-        </div>
-
+      <div class="page-header">
         <div class="container">
-            <div class="filters">
-                <span class="filter-title">Filter By Category:</span>
-                <div class="filter-options">
-                    <div>
-                        <input type="checkbox" id="women-handbags" value="women handbags" onchange="filterProducts('women')">
-                        <label for="women-handbags">Handbags</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="women-jewelry" value="women jewelry" onchange="filterProducts('women')">
-                        <label for="women-jewelry">Jewelry</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="women-scarves" value="women scarves" onchange="filterProducts('women')">
-                        <label for="women-scarves">Scarves</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="women-sunglasses" value="women sunglasses" onchange="filterProducts('women')">
-                        <label for="women-sunglasses">Sunglasses</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="products-grid" id="women-products">
-                <div class="product" data-category="women handbags">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Designer Handbag">
-                    </div>
-                    <div class="product-info">
-                        <h3>Designer Tote Bag</h3>
-                        <p>Spacious tote bag with premium craftsmanship</p>
-                        <div class="product-price">
-                            <span class="price">₵1,999.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Designer Tote Bag', 1999.99, 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women jewelry">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Gold Necklace">
-                    </div>
-                    <div class="product-info">
-                        <h3>Gold Pendant Necklace</h3>
-                        <p>Elegant gold necklace with precious stone</p>
-                        <div class="product-price">
-                            <span class="price">₵1,699.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Gold Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women scarves">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Silk Scarf">
-                    </div>
-                    <div class="product-info">
-                        <h3>Printed Silk Scarf</h3>
-                        <p>Luxurious silk scarf with unique pattern</p>
-                        <div class="product-price">
-                            <span class="price">₵599.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Printed Silk Scarf', 599.99, 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women sunglasses">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Women's Sunglasses">
-                    </div>
-                    <div class="product-info">
-                        <h3>Cat Eye Sunglasses</h3>
-                        <p>Trendy cat eye sunglasses with UV protection</p>
-                        <div class="product-price">
-                            <span class="price">₵999.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Cat Eye Sunglasses', 999.99, 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women jewelry">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Bracelet">
-                    </div>
-                    <div class="product-info">
-                        <h3>Pearl Bracelet</h3>
-                        <p>Elegant bracelet with genuine pearls</p>
-                        <div class="product-price">
-                            <span class="price">₵899.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Pearl Bracelet', 899.99, 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women jewelry">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Gold Necklace">
-                    </div>
-                    <div class="product-info">
-                        <h3>Gold Pendant Necklace</h3>
-                        <p>Elegant gold necklace with precious stone</p>
-                        <div class="product-price">
-                            <span class="price">₵1,699.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Gold Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women scarves">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Silk Scarf">
-                    </div>
-                    <div class="product-info">
-                        <h3>Printed Silk Scarf</h3>
-                        <p>Luxurious silk scarf with unique pattern</p>
-                        <div class="product-price">
-                            <span class="price">₵599.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Printed Silk Scarf', 599.99, 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women sunglasses">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Women's Sunglasses">
-                    </div>
-                    <div class="product-info">
-                        <h3>Cat Eye Sunglasses</h3>
-                        <p>Trendy cat eye sunglasses with UV protection</p>
-                        <div class="product-price">
-                            <span class="price">₵999.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Cat Eye Sunglasses', 999.99, 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women jewelry">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Bracelet">
-                    </div>
-                    <div class="product-info">
-                        <h3>Pearl Bracelet</h3>
-                        <p>Elegant bracelet with genuine pearls</p>
-                        <div class="product-price">
-                            <span class="price">₵899.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Pearl Bracelet', 899.99, 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women jewelry">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Gold Necklace">
-                    </div>
-                    <div class="product-info">
-                        <h3>Gold Pendant Necklace</h3>
-                        <p>Elegant gold necklace with precious stone</p>
-                        <div class="product-price">
-                            <span class="price">₵1,699.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Gold Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women scarves">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Silk Scarf">
-                    </div>
-                    <div class="product-info">
-                        <h3>Printed Silk Scarf</h3>
-                        <p>Luxurious silk scarf with unique pattern</p>
-                        <div class="product-price">
-                            <span class="price">₵599.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Printed Silk Scarf', 599.99, 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women sunglasses">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Women's Sunglasses">
-                    </div>
-                    <div class="product-info">
-                        <h3>Cat Eye Sunglasses</h3>
-                        <p>Trendy cat eye sunglasses with UV protection</p>
-                        <div class="product-price">
-                            <span class="price">₵999.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Cat Eye Sunglasses', 999.99, 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women jewelry">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Bracelet">
-                    </div>
-                    <div class="product-info">
-                        <h3>Pearl Bracelet</h3>
-                        <p>Elegant bracelet with genuine pearls</p>
-                        <div class="product-price">
-                            <span class="price">₵899.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Pearl Bracelet', 899.99, 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product" data-category="women handbags">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1596944943927-92b3a562cf31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Evening Clutch">
-                    </div>
-                    <div class="product-info">
-                        <h3>Evening Clutch</h3>
-                        <p>Sparkling clutch bag for special occasions</p>
-                        <div class="product-price">
-                            <span class="price">₵1,199.99</span>
-                            <div class="add-to-cart" onclick="addToCart('Evening Clutch', 1199.99, 'https://images.unsplash.com/photo-1596944943927-92b3a562cf31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <h1>Women's Accessories</h1>
+          <div class="breadcrumb">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <span>/</span>
+            <a href="#">Women</a>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="filters">
+          <span class="filter-title">Filter By Category:</span>
+          <div class="filter-options">
+            <div>
+              <input
+                type="checkbox"
+                id="women-handbags"
+                value="women handbags"
+                onchange="filterProducts('women')"
+              />
+              <label for="women-handbags">Handbags</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="women-jewelry"
+                value="women jewelry"
+                onchange="filterProducts('women')"
+              />
+              <label for="women-jewelry">Jewelry</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="women-scarves"
+                value="women scarves"
+                onchange="filterProducts('women')"
+              />
+              <label for="women-scarves">Scarves</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="women-sunglasses"
+                value="women sunglasses"
+                onchange="filterProducts('women')"
+              />
+              <label for="women-sunglasses">Sunglasses</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-grid" id="women-products">
+          <div class="product" data-category="women handbags">
+            <div class="product-image">
+              <img
+                src="./images/0964f2f1-4000-4f12-9dd9-ce96c56e180f.jpg"
+                alt="Women's Designer Handbag"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Designer Tote Bag</h3>
+              <p>Spacious tote bag with premium craftsmanship</p>
+              <div class="product-price">
+                <span class="price">₵1,999.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Designer Tote Bag', 1999.99, './images/0964f2f1-4000-4f12-9dd9-ce96c56e180f.jpg')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women jewelry">
+            <div class="product-image">
+              <img
+                src="./images/1 chiếc túi đeo vai Colorblock có trang trí bằng….jpg"
+                alt="Women's Designer Handbag"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Gold Pendant Necklace</h3>
+              <p>Elegant gold necklace with precious stone</p>
+              <div class="product-price">
+                <span class="price">₵1,699.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Gold Pendant Necklace', 1699.99, './images/1 chiếc túi đeo vai Colorblock có trang trí bằng….jpg')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women scarves">
+            <div class="product-image">
+              <img
+                src="./images/36f83e52-d390-4707-b281-44cbf576ce30.jpg"
+                alt="Women's Designer Handbag"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Printed Silk Scarf</h3>
+              <p>Luxurious silk scarf with unique pattern</p>
+              <div class="product-price">
+                <span class="price">₵599.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Printed Silk Scarf', 599.99, './images/36f83e52-d390-4707-b281-44cbf576ce30.jpg')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women sunglasses">
+            <div class="product-image">
+              <img
+                src="./images/43343e7b-3efa-41d7-b54a-67adadae3c47.jpg"
+                alt="Women's Designer Handbag"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Cat Eye Sunglasses</h3>
+              <p>Trendy cat eye sunglasses with UV protection</p>
+              <div class="product-price">
+                <span class="price">₵999.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Cat Eye Sunglasses', 999.99, './images/43343e7b-3efa-41d7-b54a-67adadae3c47.jpg')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women jewelry">
+            <div class="product-image">
+              <img
+                src="./images/4ba1722c-526a-458b-a0e1-d171d4ba1289.jpg"
+                alt="Women's Designer Handbag"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Pearl Bracelet</h3>
+              <p>Elegant bracelet with genuine pearls</p>
+              <div class="product-price">
+                <span class="price">₵899.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Pearl Bracelet', 899.99, './images/4ba1722c-526a-458b-a0e1-d171d4ba1289.jpg')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women jewelry">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Gold Necklace"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Gold Pendant Necklace</h3>
+              <p>Elegant gold necklace with precious stone</p>
+              <div class="product-price">
+                <span class="price">₵1,699.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Gold Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women scarves">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Silk Scarf"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Printed Silk Scarf</h3>
+              <p>Luxurious silk scarf with unique pattern</p>
+              <div class="product-price">
+                <span class="price">₵599.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Printed Silk Scarf', 599.99, 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women sunglasses">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Women's Sunglasses"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Cat Eye Sunglasses</h3>
+              <p>Trendy cat eye sunglasses with UV protection</p>
+              <div class="product-price">
+                <span class="price">₵999.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Cat Eye Sunglasses', 999.99, 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women jewelry">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Bracelet"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Pearl Bracelet</h3>
+              <p>Elegant bracelet with genuine pearls</p>
+              <div class="product-price">
+                <span class="price">₵899.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Pearl Bracelet', 899.99, 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women jewelry">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Gold Necklace"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Gold Pendant Necklace</h3>
+              <p>Elegant gold necklace with precious stone</p>
+              <div class="product-price">
+                <span class="price">₵1,699.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Gold Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women scarves">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Silk Scarf"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Printed Silk Scarf</h3>
+              <p>Luxurious silk scarf with unique pattern</p>
+              <div class="product-price">
+                <span class="price">₵599.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Printed Silk Scarf', 599.99, 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women sunglasses">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Women's Sunglasses"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Cat Eye Sunglasses</h3>
+              <p>Trendy cat eye sunglasses with UV protection</p>
+              <div class="product-price">
+                <span class="price">₵999.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Cat Eye Sunglasses', 999.99, 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women jewelry">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Bracelet"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Pearl Bracelet</h3>
+              <p>Elegant bracelet with genuine pearls</p>
+              <div class="product-price">
+                <span class="price">₵899.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Pearl Bracelet', 899.99, 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product" data-category="women handbags">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1596944943927-92b3a562cf31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Evening Clutch"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Evening Clutch</h3>
+              <p>Sparkling clutch bag for special occasions</p>
+              <div class="product-price">
+                <span class="price">₵1,199.99</span>
+                <div
+                  class="add-to-cart"
+                  onclick="addToCart('Evening Clutch', 1199.99, 'https://images.unsplash.com/photo-1596944943927-92b3a562cf31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                >
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Collection Page -->
     <div id="collection" class="page">
-        <div class="page-header">
-            <div class="container">
-                <h1>Our Collection</h1>
-                <div class="breadcrumb">
-                    <a href="#" onclick="showPage('home')">Home</a>
-                    <span>/</span>
-                    <a href="#">Collection</a>
-                </div>
-            </div>
+      <div class="page-header">
+        <div class="container">
+          <h1>Our Collection</h1>
+          <div class="breadcrumb">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <span>/</span>
+            <a href="#">Collection</a>
+          </div>
         </div>
+      </div>
 
-        <!-- Categories Section -->
-        <section class="categories">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Shop By Category</h2>
-                </div>
-                
-                <div class="category-container">
-                    <div class="category">
-                        <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Men's Accessories">
-                        <div class="category-overlay">
-                            <h3>Men's Collection</h3>
-                            <a href="#" class="btn btn-outline" onclick="showPage('men')">Explore</a>
-                        </div>
-                    </div>
-                    
-                    <div class="category">
-                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Women's Accessories">
-                        <div class="category-overlay">
-                            <h3>Women's Collection</h3>
-                            <a href="#" class="btn btn-outline" onclick="showPage('women')">Explore</a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Categories Section -->
+      <section class="categories">
+        <div class="container">
+          <div class="section-title">
+            <h2>Shop By Category</h2>
+          </div>
+
+          <div class="category-container">
+            <div class="category">
+              <img
+                src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Men's Accessories"
+              />
+              <div class="category-overlay">
+                <h3>Men's Collection</h3>
+                <a href="#" class="btn btn-outline" onclick="showPage('men')"
+                  >Explore</a
+                >
+              </div>
             </div>
-        </section>
 
-        <!-- Featured Products -->
-        <section class="featured-products">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Featured Products</h2>
-                </div>
-                
-                <div class="products-container">
-                    <div class="product" data-category="men watches">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Leather Watch">
-                        </div>
-                        <div class="product-info">
-                            <h3>Classic Leather Watch</h3>
-                            <p>Elegant timepiece with genuine leather strap</p>
-                            <div class="product-price">
-                                <span class="price">₵1,499.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Classic Leather Watch', 1499.99, 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product" data-category="women jewelry">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1606760227093-89928c8d5e9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Sunglasses">
-                        </div>
-                        <div class="product-info">
-                            <h3>Designer Sunglasses</h3>
-                            <p>UV protected lenses with polarized coating</p>
-                            <div class="product-price">
-                                <span class="price">₵899.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Designer Sunglasses', 899.99, 'https://images.unsplash.com/photo-1606760227093-89928c8d5e9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product" data-category="women handbags">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Handbag">
-                        </div>
-                        <div class="product-info">
-                            <h3>Designer Handbag</h3>
-                            <p>Luxurious handcrafted leather handbag</p>
-                            <div class="product-price">
-                                <span class="price">₵2,199.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Designer Handbag', 2199.99, 'https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product" data-category="women jewelry">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Silver Necklace">
-                        </div>
-                        <div class="product-info">
-                            <h3>Silver Pendant Necklace</h3>
-                            <p>Elegant sterling silver necklace with diamond accent</p>
-                            <div class="product-price">
-                                <span class="price">₵1,699.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Silver Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-category="women handbags">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Handbag">
-                        </div>
-                        <div class="product-info">
-                            <h3>Designer Handbag</h3>
-                            <p>Luxurious handcrafted leather handbag</p>
-                            <div class="product-price">
-                                <span class="price">₵2,199.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Designer Handbag', 2199.99, 'https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product" data-category="women jewelry">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Silver Necklace">
-                        </div>
-                        <div class="product-info">
-                            <h3>Silver Pendant Necklace</h3>
-                            <p>Elegant sterling silver necklace with diamond accent</p>
-                            <div class="product-price">
-                                <span class="price">₵1,699.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Silver Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-category="women handbags">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Handbag">
-                        </div>
-                        <div class="product-info">
-                            <h3>Designer Handbag</h3>
-                            <p>Luxurious handcrafted leather handbag</p>
-                            <div class="product-price">
-                                <span class="price">₵2,199.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Designer Handbag', 2199.99, 'https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="product" data-category="women jewelry">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Silver Necklace">
-                        </div>
-                        <div class="product-info">
-                            <h3>Silver Pendant Necklace</h3>
-                            <p>Elegant sterling silver necklace with diamond accent</p>
-                            <div class="product-price">
-                                <span class="price">₵1,699.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Silver Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="category">
+              <img
+                src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                alt="Women's Accessories"
+              />
+              <div class="category-overlay">
+                <h3>Women's Collection</h3>
+                <a href="#" class="btn btn-outline" onclick="showPage('women')"
+                  >Explore</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section class="featured-products">
+        <div class="container">
+          <div class="section-title">
+            <h2>Featured Products</h2>
+          </div>
+
+          <div class="products-container">
+            <div class="product" data-category="men watches">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Leather Watch"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Classic Leather Watch</h3>
+                <p>Elegant timepiece with genuine leather strap</p>
+                <div class="product-price">
+                  <span class="price">₵1,499.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Classic Leather Watch', 1499.99, 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women jewelry">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1606760227093-89928c8d5e9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Sunglasses"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Designer Sunglasses</h3>
+                <p>UV protected lenses with polarized coating</p>
+                <div class="product-price">
+                  <span class="price">₵899.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Designer Sunglasses', 899.99, 'https://images.unsplash.com/photo-1606760227093-89928c8d5e9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women handbags">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Handbag"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Designer Handbag</h3>
+                <p>Luxurious handcrafted leather handbag</p>
+                <div class="product-price">
+                  <span class="price">₵2,199.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Designer Handbag', 2199.99, 'https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women jewelry">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Silver Necklace"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Silver Pendant Necklace</h3>
+                <p>Elegant sterling silver necklace with diamond accent</p>
+                <div class="product-price">
+                  <span class="price">₵1,699.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Silver Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women handbags">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Handbag"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Designer Handbag</h3>
+                <p>Luxurious handcrafted leather handbag</p>
+                <div class="product-price">
+                  <span class="price">₵2,199.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Designer Handbag', 2199.99, 'https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women jewelry">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Silver Necklace"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Silver Pendant Necklace</h3>
+                <p>Elegant sterling silver necklace with diamond accent</p>
+                <div class="product-price">
+                  <span class="price">₵1,699.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Silver Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women handbags">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Handbag"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Designer Handbag</h3>
+                <p>Luxurious handcrafted leather handbag</p>
+                <div class="product-price">
+                  <span class="price">₵2,199.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Designer Handbag', 2199.99, 'https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women jewelry">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Silver Necklace"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Silver Pendant Necklace</h3>
+                <p>Elegant sterling silver necklace with diamond accent</p>
+                <div class="product-price">
+                  <span class="price">₵1,699.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Silver Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Cart Page -->
     <div id="cart" class="page">
-        <div class="page-header">
-            <div class="container">
-                <h1>Shopping Cart</h1>
-                <div class="breadcrumb">
-                    <a href="#" onclick="showPage('home')">Home</a>
-                    <span>/</span>
-                    <a href="#">Cart</a>
-                </div>
-            </div>
-        </div>
-
+      <div class="page-header">
         <div class="container">
-            <table class="cart-table">
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="cart-items">
-                    <!-- Cart items will be dynamically inserted here -->
-                </tbody>
-            </table>
-
-            <div class="mobile-cart" id="mobile-cart">
-                <!-- Mobile cart items will be dynamically inserted here -->
-            </div>
-
-            <div class="cart-totals">
-                <h2>Cart Totals</h2>
-                <div class="totals-row">
-                    <span>Subtotal</span>
-                    <span id="cart-subtotal">₵0.00</span>
-                </div>
-                <div class="totals-row">
-                    <span>Shipping</span>
-                    <span id="cart-shipping">₵0.00</span>
-                </div>
-                <div class="totals-row">
-                    <span>Tax</span>
-                    <span id="cart-tax">₵0.00</span>
-                </div>
-                <div class="totals-row total">
-                    <span>Total</span>
-                    <span id="cart-total">₵0.00</span>
-                </div>
-
-                <div class="checkout-buttons">
-                    <a href="#" class="btn btn-outline" onclick="showPage('home')">Continue Shopping</a>
-                    <a href="#" class="btn" onclick="showPage('checkout')">Proceed to Checkout</a>
-                </div>
-            </div>
+          <h1>Shopping Cart</h1>
+          <div class="breadcrumb">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <span>/</span>
+            <a href="#">Cart</a>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+          </tbody>
+        </table>
+
+        <div class="mobile-cart" id="mobile-cart">
+          <!-- Mobile cart items will be dynamically inserted here -->
+        </div>
+
+        <div class="cart-totals">
+          <h2>Cart Totals</h2>
+          <div class="totals-row">
+            <span>Subtotal</span>
+            <span id="cart-subtotal">₵0.00</span>
+          </div>
+          <div class="totals-row">
+            <span>Shipping</span>
+            <span id="cart-shipping">₵0.00</span>
+          </div>
+          <div class="totals-row">
+            <span>Tax</span>
+            <span id="cart-tax">₵0.00</span>
+          </div>
+          <div class="totals-row total">
+            <span>Total</span>
+            <span id="cart-total">₵0.00</span>
+          </div>
+
+          <div class="checkout-buttons">
+            <a href="#" class="btn btn-outline" onclick="showPage('home')"
+              >Continue Shopping</a
+            >
+            <a href="#" class="btn" onclick="showPage('checkout')"
+              >Proceed to Checkout</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Checkout Page -->
     <div id="checkout" class="page">
-        <div class="page-header">
-            <div class="container">
-                <h1>Checkout</h1>
-                <div class="breadcrumb">
-                    <a href="#" onclick="showPage('home')">Home</a>
-                    <span>/</span>
-                    <a href="#" onclick="showPage('cart')">Cart</a>
-                    <span>/</span>
-                    <a href="#">Checkout</a>
-                </div>
-            </div>
-        </div>
-
+      <div class="page-header">
         <div class="container">
-            <div class="payment-form">
-                <h2>Payment Method</h2>
-
-                <div class="payment-methods">
-                    <div class="payment-method" onclick="selectPayment('mobile-money')">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Mobile Money</h3>
-                        <p>Pay with MTN Mobile Money or Vodafone Cash</p>
-                    </div>
-
-                    <div class="payment-method active" onclick="selectPayment('card')">
-                        <i class="fas fa-credit-card"></i>
-                        <h3>Credit/Debit Card</h3>
-                        <p>Pay securely with your card</p>
-                    </div>
-
-                    <div class="payment-method" onclick="selectPayment('bank')">
-                        <i class="fas fa-university"></i>
-                        <h3>Bank Transfer</h3>
-                        <p>Transfer directly from your bank</p>
-                    </div>
-                </div>
-
-                <form id="payment-form-details">
-                    <div class="form-group">
-                        <label for="card-number">Card Number</label>
-                        <input type="text" id="card-number" class="form-control" placeholder="1234 5678 9012 3456" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="card-name">Name on Card</label>
-                        <input type="text" id="card-name" class="form-control" placeholder="John Doe" required>
-                    </div>
-
-                    <div class="form-group" style="display: flex; gap: 15px">
-                        <div style="flex: 1">
-                            <label for="card-expiry">Expiry Date</label>
-                            <input type="text" id="card-expiry" class="form-control" placeholder="MM/YY" required>
-                        </div>
-                        <div style="flex: 1">
-                            <label for="card-cvv">CVV</label>
-                            <input type="text" id="card-cvv" class="form-control" placeholder="123" required>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn">Pay Now</button>
-                </form>
-            </div>
+          <h1>Checkout</h1>
+          <div class="breadcrumb">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <span>/</span>
+            <a href="#" onclick="showPage('cart')">Cart</a>
+            <span>/</span>
+            <a href="#">Checkout</a>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="payment-form">
+          <h2>Payment Method</h2>
+
+          <div class="payment-methods">
+            <div class="payment-method" onclick="selectPayment('mobile-money')">
+              <i class="fas fa-mobile-alt"></i>
+              <h3>Mobile Money</h3>
+              <p>Pay with MTN Mobile Money or Vodafone Cash</p>
+            </div>
+
+            <div class="payment-method active" onclick="selectPayment('card')">
+              <i class="fas fa-credit-card"></i>
+              <h3>Credit/Debit Card</h3>
+              <p>Pay securely with your card</p>
+            </div>
+
+            <div class="payment-method" onclick="selectPayment('bank')">
+              <i class="fas fa-university"></i>
+              <h3>Bank Transfer</h3>
+              <p>Transfer directly from your bank</p>
+            </div>
+          </div>
+
+          <form id="payment-form-details">
+            <div class="form-group">
+              <label for="card-number">Card Number</label>
+              <input
+                type="text"
+                id="card-number"
+                class="form-control"
+                placeholder="1234 5678 9012 3456"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="card-name">Name on Card</label>
+              <input
+                type="text"
+                id="card-name"
+                class="form-control"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+
+            <div class="form-group" style="display: flex; gap: 15px">
+              <div style="flex: 1">
+                <label for="card-expiry">Expiry Date</label>
+                <input
+                  type="text"
+                  id="card-expiry"
+                  class="form-control"
+                  placeholder="MM/YY"
+                  required
+                />
+              </div>
+              <div style="flex: 1">
+                <label for="card-cvv">CVV</label>
+                <input
+                  type="text"
+                  id="card-cvv"
+                  class="form-control"
+                  placeholder="123"
+                  required
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Pay Now</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!-- Contact Page -->
     <div id="contact" class="page">
-        <div class="page-header">
-            <div class="container">
-                <h1>Contact Us</h1>
-                <div class="breadcrumb">
-                    <a href="#" onclick="showPage('home')">Home</a>
-                    <span>/</span>
-                    <a href="#">Contact</a>
-                </div>
-            </div>
-        </div>
-
+      <div class="page-header">
         <div class="container">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>Address</h4>
-                            <p>123 Fashion Street, Osu, Accra, Ghana</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+233 (0) 55 123 4567</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@fineoutlet.com</p>
-                        </div>
-                    </div>
-
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <h3>Send Us a Message</h3>
-
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" class="form-control" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
+          <h1>Contact Us</h1>
+          <div class="breadcrumb">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <span>/</span>
+            <a href="#">Contact</a>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4>Address</h4>
+                <p>123 Fashion Street, Osu, Accra, Ghana</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>+233 (0) 55 123 4567</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>info@fineoutlet.com</p>
+              </div>
+            </div>
+
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" required></textarea>
+              </div>
+
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- About Page -->
     <div id="about" class="page">
-        <div class="page-header">
-            <div class="container">
-                <h1>About Us</h1>
-                <div class="breadcrumb">
-                    <a href="#" onclick="showPage('home')">Home</a>
-                    <span>/</span>
-                    <a href="#">About Us</a>
-                </div>
-            </div>
-        </div>
-
+      <div class="page-header">
         <div class="container">
-            <div class="about-content">
-                <h2>Our Story</h2>
-                <p>Fine Outlet Accessories was founded in 2010 with a vision to provide premium quality accessories for both men and women, combining style, functionality, and affordability. What started as a small boutique in Accra has now grown into one of Ghana's leading accessory retailers.</p>
-                
-                <p>We believe that accessories are the finishing touches that complete any outfit and express personal style. That's why we carefully curate our collection to include only the highest quality products from around the world.</p>
-                
-                <h2>Our Mission</h2>
-                <p>Our mission is to help our customers express their unique style through high-quality accessories that stand the test of time. We are committed to providing exceptional customer service and building lasting relationships with our clients.</p>
-                
-                <h2>Our Values</h2>
-                <p>At Fine Outlet Accessories, we value quality, authenticity, and customer satisfaction above all else. We are dedicated to sourcing products that meet our high standards and providing a shopping experience that exceeds expectations.</p>
-            </div>
-
-            <div class="section-title">
-                <h2>Meet Our Team</h2>
-            </div>
-
-            <div class="team-container">
-                <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Team Member">
-                    <div class="team-info">
-                        <h3>Kwame Mensah</h3>
-                        <p>Founder & CEO</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Team Member">
-                    <div class="team-info">
-                        <h3>Ama Serwaa</h3>
-                        <p>Head of Design</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Team Member">
-                    <div class="team-info">
-                        <h3>Kofi Annan</h3>
-                        <p>Marketing Director</p>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Team Member">
-                    <div class="team-info">
-                        <h3>Abena Sarpong</h3>
-                        <p>Customer Service Manager</p>
-                    </div>
-                </div>
-            </div>
+          <h1>About Us</h1>
+          <div class="breadcrumb">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <span>/</span>
+            <a href="#">About Us</a>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="about-content">
+          <h2>Our Story</h2>
+          <p>
+            Fine Outlet Accessories was founded in 2010 with a vision to provide
+            premium quality accessories for both men and women, combining style,
+            functionality, and affordability. What started as a small boutique
+            in Accra has now grown into one of Ghana's leading accessory
+            retailers.
+          </p>
+
+          <p>
+            We believe that accessories are the finishing touches that complete
+            any outfit and express personal style. That's why we carefully
+            curate our collection to include only the highest quality products
+            from around the world.
+          </p>
+
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to help our customers express their unique style
+            through high-quality accessories that stand the test of time. We are
+            committed to providing exceptional customer service and building
+            lasting relationships with our clients.
+          </p>
+
+          <h2>Our Values</h2>
+          <p>
+            At Fine Outlet Accessories, we value quality, authenticity, and
+            customer satisfaction above all else. We are dedicated to sourcing
+            products that meet our high standards and providing a shopping
+            experience that exceeds expectations.
+          </p>
+        </div>
+
+        <div class="section-title">
+          <h2>Meet Our Team</h2>
+        </div>
+
+        <div class="team-container">
+          <div class="team-member">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+              alt="Team Member"
+            />
+            <div class="team-info">
+              <h3>Kwame Mensah</h3>
+              <p>Founder & CEO</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+              alt="Team Member"
+            />
+            <div class="team-info">
+              <h3>Ama Serwaa</h3>
+              <p>Head of Design</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+              alt="Team Member"
+            />
+            <div class="team-info">
+              <h3>Kofi Annan</h3>
+              <p>Marketing Director</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <img
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+              alt="Team Member"
+            />
+            <div class="team-info">
+              <h3>Abena Sarpong</h3>
+              <p>Customer Service Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Order Tracking Page -->
     <div id="order" class="page">
-        <div class="page-header">
-            <div class="container">
-                <h1>Order Tracking</h1>
-                <div class="breadcrumb">
-                    <a href="#" onclick="showPage('home')">Home</a>
-                    <span>/</span>
-                    <a href="#">Order Tracking</a>
-                </div>
-            </div>
-        </div>
-
+      <div class="page-header">
         <div class="container">
-            <div class="order-tracking">
-                <h2>Track Your Order</h2>
-                <p>Enter your order number and email address to check the status of your order.</p>
-                
-                <form class="tracking-form">
-                    <input type="text" placeholder="Order Number" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <button type="submit" class="btn">Track Order</button>
-                </form>
-
-                <div class="order-status">
-                    <h3>Order Status: <span style="color: var(--secondary);">Processing</span></h3>
-                    
-                    <div class="status-timeline">
-                        <div class="status-step completed">
-                            <div class="status-icon">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <p>Order Placed</p>
-                        </div>
-                        
-                        <div class="status-step active">
-                            <div class="status-icon">
-                                <i class="fas fa-cog"></i>
-                            </div>
-                            <p>Processing</p>
-                        </div>
-                        
-                        <div class="status-step">
-                            <div class="status-icon">
-                                <i class="fas fa-truck"></i>
-                            </div>
-                            <p>Shipped</p>
-                        </div>
-                        
-                        <div class="status-step">
-                            <div class="status-icon">
-                                <i class="fas fa-home"></i>
-                            </div>
-                            <p>Delivered</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <h1>Order Tracking</h1>
+          <div class="breadcrumb">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <span>/</span>
+            <a href="#">Order Tracking</a>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="order-tracking">
+          <h2>Track Your Order</h2>
+          <p>
+            Enter your order number and email address to check the status of
+            your order.
+          </p>
+
+          <form class="tracking-form">
+            <input type="text" placeholder="Order Number" required />
+            <input type="email" placeholder="Email Address" required />
+            <button type="submit" class="btn">Track Order</button>
+          </form>
+
+          <div class="order-status">
+            <h3>
+              Order Status:
+              <span style="color: var(--secondary)">Processing</span>
+            </h3>
+
+            <div class="status-timeline">
+              <div class="status-step completed">
+                <div class="status-icon">
+                  <i class="fas fa-check"></i>
+                </div>
+                <p>Order Placed</p>
+              </div>
+
+              <div class="status-step active">
+                <div class="status-icon">
+                  <i class="fas fa-cog"></i>
+                </div>
+                <p>Processing</p>
+              </div>
+
+              <div class="status-step">
+                <div class="status-icon">
+                  <i class="fas fa-truck"></i>
+                </div>
+                <p>Shipped</p>
+              </div>
+
+              <div class="status-step">
+                <div class="status-icon">
+                  <i class="fas fa-home"></i>
+                </div>
+                <p>Delivered</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Login/Signup Page -->
     <div id="login" class="page">
-        <div class="page-header">
-            <div class="container">
-                <h1>Login / Sign Up</h1>
-                <div class="breadcrumb">
-                    <a href="#" onclick="showPage('home')">Home</a>
-                    <span>/</span>
-                    <a href="#">Login</a>
-                </div>
-            </div>
-        </div>
-
+      <div class="page-header">
         <div class="container">
-            <div class="auth-container">
-                <div class="auth-tabs">
-                    <div class="auth-tab active" onclick="switchAuthTab('login')">Login</div>
-                    <div class="auth-tab" onclick="switchAuthTab('signup')">Sign Up</div>
-                </div>
-
-                <form class="auth-form active" id="login-form">
-                    <div class="form-group">
-                        <label for="login-email">Email Address</label>
-                        <input type="email" id="login-email" class="form-control" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="login-password">Password</label>
-                        <input type="password" id="login-password" class="form-control" required>
-                    </div>
-
-                    <button type="submit" class="btn" style="width: 100%">Login</button>
-
-                    <p style="text-align: center; margin-top: 20px">
-                        <a href="#">Forgot your password?</a>
-                    </p>
-                </form>
-
-                <form class="auth-form" id="signup-form">
-                    <div class="form-group">
-                        <label for="signup-name">Full Name</label>
-                        <input type="text" id="signup-name" class="form-control" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="signup-email">Email Address</label>
-                        <input type="email" id="signup-email" class="form-control" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="signup-password">Password</label>
-                        <input type="password" id="signup-password" class="form-control" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="signup-phone">Phone Number</label>
-                        <input type="tel" id="signup-phone" class="form-control" required>
-                    </div>
-
-                    <button type="submit" class="btn" style="width: 100%">Create Account</button>
-                </form>
-            </div>
+          <h1>Login / Sign Up</h1>
+          <div class="breadcrumb">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <span>/</span>
+            <a href="#">Login</a>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="auth-container">
+          <div class="auth-tabs">
+            <div class="auth-tab active" onclick="switchAuthTab('login')">
+              Login
+            </div>
+            <div class="auth-tab" onclick="switchAuthTab('signup')">
+              Sign Up
+            </div>
+          </div>
+
+          <form class="auth-form active" id="login-form">
+            <div class="form-group">
+              <label for="login-email">Email Address</label>
+              <input
+                type="email"
+                id="login-email"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%">Login</button>
+
+            <p style="text-align: center; margin-top: 20px">
+              <a href="#">Forgot your password?</a>
+            </p>
+          </form>
+
+          <form class="auth-form" id="signup-form">
+            <div class="form-group">
+              <label for="signup-name">Full Name</label>
+              <input
+                type="text"
+                id="signup-name"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="signup-email">Email Address</label>
+              <input
+                type="email"
+                id="signup-email"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input
+                type="password"
+                id="signup-password"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="signup-phone">Phone Number</label>
+              <input
+                type="tel"
+                id="signup-phone"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%">
+              Create Account
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!-- User Dashboard Page -->
     <div id="user-dashboard" class="page">
-        <div class="page-header">
-            <div class="container">
-                <h1>My Account</h1>
-                <div class="breadcrumb">
-                    <a href="#" onclick="showPage('home')">Home</a>
-                    <span>/</span>
-                    <a href="#">My Account</a>
-                </div>
-            </div>
-        </div>
-
+      <div class="page-header">
         <div class="container">
-            <div class="user-welcome">
-                <h2>Welcome, <span id="user-name">User</span>!</h2>
-                <p>Manage your account, track orders, and update your preferences.</p>
-            </div>
-
-            <div class="user-stats">
-                <div class="stat-card">
-                    <i class="fas fa-shopping-bag"></i>
-                    <h3>5</h3>
-                    <p>Orders</p>
-                </div>
-
-                <div class="stat-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>12</h3>
-                    <p>Wishlist Items</p>
-                </div>
-
-                <div class="stat-card">
-                    <i class="fas fa-tag"></i>
-                    <h3>₵3,499.99</h3>
-                    <p>Total Spent</p>
-                </div>
-            </div>
-
-            <div class="products-container">
-                <div class="section-title">
-                    <h2>Recommended For You</h2>
-                </div>
-
-                <div class="products-container">
-                    <div class="product" data-category="men watches">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Leather Watch">
-                        </div>
-                        <div class="product-info">
-                            <h3>Classic Leather Watch</h3>
-                            <p>Elegant timepiece with genuine leather strap</p>
-                            <div class="product-price">
-                                <span class="price">₵1,499.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Classic Leather Watch', 1499.99, 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-category="women jewelry">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Silver Necklace">
-                        </div>
-                        <div class="product-info">
-                            <h3>Silver Pendant Necklace</h3>
-                            <p>Elegant sterling silver necklace with diamond accent</p>
-                            <div class="product-price">
-                                <span class="price">₵1,699.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Silver Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-category="men sunglasses">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Aviator Sunglasses">
-                        </div>
-                        <div class="product-info">
-                            <h3>Aviator Sunglasses</h3>
-                            <p>Classic aviator style with UV protection</p>
-                            <div class="product-price">
-                                <span class="price">₵899.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Aviator Sunglasses', 899.99, 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product" data-category="women handbags">
-                        <div class="product-image">
-                            <img src="https://images.unsplash.com/photo-1596944943927-92b3a562cf31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Evening Clutch">
-                        </div>
-                        <div class="product-info">
-                            <h3>Evening Clutch</h3>
-                            <p>Sparkling clutch bag for special occasions</p>
-                            <div class="product-price">
-                                <span class="price">₵1,199.99</span>
-                                <div class="add-to-cart" onclick="addToCart('Evening Clutch', 1199.99, 'https://images.unsplash.com/photo-1596944943927-92b3a562cf31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')">
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <h1>My Account</h1>
+          <div class="breadcrumb">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <span>/</span>
+            <a href="#">My Account</a>
+          </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="user-welcome">
+          <h2>Welcome, <span id="user-name">User</span>!</h2>
+          <p>Manage your account, track orders, and update your preferences.</p>
+        </div>
+
+        <div class="user-stats">
+          <div class="stat-card">
+            <i class="fas fa-shopping-bag"></i>
+            <h3>5</h3>
+            <p>Orders</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-heart"></i>
+            <h3>12</h3>
+            <p>Wishlist Items</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-tag"></i>
+            <h3>₵3,499.99</h3>
+            <p>Total Spent</p>
+          </div>
+        </div>
+
+        <div class="products-container">
+          <div class="section-title">
+            <h2>Recommended For You</h2>
+          </div>
+
+          <div class="products-container">
+            <div class="product" data-category="men watches">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Leather Watch"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Classic Leather Watch</h3>
+                <p>Elegant timepiece with genuine leather strap</p>
+                <div class="product-price">
+                  <span class="price">₵1,499.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Classic Leather Watch', 1499.99, 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women jewelry">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Silver Necklace"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Silver Pendant Necklace</h3>
+                <p>Elegant sterling silver necklace with diamond accent</p>
+                <div class="product-price">
+                  <span class="price">₵1,699.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Silver Pendant Necklace', 1699.99, 'https://images.unsplash.com/photo-1590649880760-2d4b0f523de7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="men sunglasses">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Aviator Sunglasses"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Aviator Sunglasses</h3>
+                <p>Classic aviator style with UV protection</p>
+                <div class="product-price">
+                  <span class="price">₵899.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Aviator Sunglasses', 899.99, 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" data-category="women handbags">
+              <div class="product-image">
+                <img
+                  src="https://images.unsplash.com/photo-1596944943927-92b3a562cf31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+                  alt="Evening Clutch"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Evening Clutch</h3>
+                <p>Sparkling clutch bag for special occasions</p>
+                <div class="product-price">
+                  <span class="price">₵1,199.99</span>
+                  <div
+                    class="add-to-cart"
+                    onclick="addToCart('Evening Clutch', 1199.99, 'https://images.unsplash.com/photo-1596944943927-92b3a562cf31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80')"
+                  >
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>FINE OUTLET ACCESSORIES</h3>
-                    <p>
-                        We offer premium quality accessories for both men and women,
-                        combining style, functionality, and affordability.
-                    </p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h3>Shop</h3>
-                    <ul>
-                        <li><a href="#" onclick="showPage('men')">Men's Accessories</a></li>
-                        <li><a href="#" onclick="showPage('women')">Women's Accessories</a></li>
-                        <li><a href="#" onclick="showPage('collection')">New Arrivals</a></li>
-                        <li><a href="#" onclick="showPage('collection')">Sale</a></li>
-                        <li><a href="#">Gift Cards</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#" onclick="showPage('about')">About Us</a></li>
-                        <li><a href="#" onclick="showPage('about')">Careers</a></li>
-                        <li><a href="#" onclick="showPage('about')">Privacy Policy</a></li>
-                        <li><a href="#" onclick="showPage('about')">Terms of Service</a></li>
-                        <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h3>Customer Service</h3>
-                    <ul>
-                        <li><a href="#" onclick="showPage('about')">FAQ</a></li>
-                        <li><a href="#" onclick="showPage('about')">Shipping & Returns</a></li>
-                        <li><a href="#" onclick="showPage('order')">Order Status</a></li>
-                        <li><a href="#" onclick="showPage('order')">Track Order</a></li>
-                        <li><a href="#" onclick="showPage('about')">Size Guide</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>FINE OUTLET ACCESSORIES</h3>
+            <p>
+              We offer premium quality accessories for both men and women,
+              combining style, functionality, and affordability.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
             </div>
+          </div>
 
-            <div class="copyright">
-                <p>&copy; 2023 FINE OUTLET ACCESSORIES. All Rights Reserved.</p>
-            </div>
+          <div class="footer-col">
+            <h3>Shop</h3>
+            <ul>
+              <li>
+                <a href="#" onclick="showPage('men')">Men's Accessories</a>
+              </li>
+              <li>
+                <a href="#" onclick="showPage('women')">Women's Accessories</a>
+              </li>
+              <li>
+                <a href="#" onclick="showPage('collection')">New Arrivals</a>
+              </li>
+              <li><a href="#" onclick="showPage('collection')">Sale</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#" onclick="showPage('about')">About Us</a></li>
+              <li><a href="#" onclick="showPage('about')">Careers</a></li>
+              <li>
+                <a href="#" onclick="showPage('about')">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" onclick="showPage('about')">Terms of Service</a>
+              </li>
+              <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#" onclick="showPage('about')">FAQ</a></li>
+              <li>
+                <a href="#" onclick="showPage('about')">Shipping & Returns</a>
+              </li>
+              <li><a href="#" onclick="showPage('order')">Order Status</a></li>
+              <li><a href="#" onclick="showPage('order')">Track Order</a></li>
+              <li><a href="#" onclick="showPage('about')">Size Guide</a></li>
+            </ul>
+          </div>
         </div>
+
+        <div class="copyright">
+          <p>&copy; 2023 FINE OUTLET ACCESSORIES. All Rights Reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
